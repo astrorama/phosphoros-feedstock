@@ -1,5 +1,5 @@
 channel_sources:
-  - astrorama,conda-forge,defaults
+  - astrorama,mark.harfouche,conda-forge,defaults
 
 channel_targets:
   - astrorama main
