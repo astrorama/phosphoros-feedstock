@@ -50,6 +50,7 @@ requirements:
         - cfitsio >=3.470
         - CCfits >=2.5
         - lxml >=4.5
+        - pybind11 >=2.6
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
