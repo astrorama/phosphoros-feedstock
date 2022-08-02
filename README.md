@@ -68,6 +68,20 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/phosphoros-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>osx_arm64_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/phosphoros-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/phosphoros-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -93,16 +107,41 @@ conda config --add channels astrorama
 conda config --set channel_priority strict
 ```
 
-Once the `astrorama` channel has been enabled, `phosphoros` can be installed with:
+Once the `astrorama` channel has been enabled, `phosphoros` can be installed with `conda`:
 
 ```
 conda install phosphoros
 ```
 
-It is possible to list all of the versions of `phosphoros` available on your platform with:
+or with `mamba`:
+
+```
+mamba install phosphoros
+```
+
+It is possible to list all of the versions of `phosphoros` available on your platform with `conda`:
 
 ```
 conda search phosphoros --channel astrorama
+```
+
+or with `mamba`:
+
+```
+mamba search phosphoros --channel astrorama
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search phosphoros --channel astrorama
+
+# List packages depending on `phosphoros`:
+mamba repoquery whoneeds phosphoros --channel astrorama
+
+# List dependencies of `phosphoros`:
+mamba repoquery depends phosphoros --channel astrorama
 ```
 
 
