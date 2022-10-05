@@ -1,3 +1,6 @@
+github:
+  user_or_org: astrorama
+
 channels:
     targets:
       - ["astrorama", "develop"]
@@ -14,8 +17,6 @@ provider:
 
 azure:
   store_build_artifacts: False
-
-secrets: ["GIT_USER", "GIT_TOKEN"]
 
 recipe_dir: recipe
 
