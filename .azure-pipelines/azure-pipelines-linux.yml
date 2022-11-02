@@ -49,5 +49,3 @@ jobs:
     displayName: Run docker build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-      GIT_TOKEN: $(GIT_TOKEN)
-      GIT_USER: $(GIT_USER)

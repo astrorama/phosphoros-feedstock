@@ -92,8 +92,6 @@ docker run ${DOCKER_RUN_ARGS} \
            -e BUILD_WITH_CONDA_DEBUG \
            -e BUILD_OUTPUT_ID \
            -e BINSTAR_TOKEN \
-           -e GIT_TOKEN \
-           -e GIT_USER \
            "${DOCKER_IMAGE}" \
            bash \
            "/home/conda/feedstock_root/${PROVIDER_DIR}/build_steps.sh"
