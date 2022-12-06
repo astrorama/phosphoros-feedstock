@@ -1,5 +1,5 @@
 {% set name = "Phosphoros" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set build_number = 0 %}
 
 package:
@@ -44,8 +44,8 @@ requirements:
         - {{ cdt('libselinux-devel') }}      # [linux]
     host:
         - python
-        - boost-cpp ==1.74.0
-        - phosphoroscore ==1.4.0
+        - boost-cpp 
+        - phosphoroscore ==1.5.0
         - qt >=5.12,<6
         - cfitsio >=3.470
         - CCfits >=2.5
