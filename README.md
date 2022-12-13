@@ -1,4 +1,4 @@
-About phosphoros 
+About phosphoros
 ================
 
 Home: http://isdc.unige.ch/euclid/phosphoros/
