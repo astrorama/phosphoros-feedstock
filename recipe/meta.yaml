@@ -1,5 +1,5 @@
 {% set name = "Phosphoros" %}
-{% set version = "1.5.2" %}
+{% set version = "1.5.4" %}
 {% set build_number = 0 %}
 
 package:
@@ -45,7 +45,7 @@ requirements:
     host:
         - python
         - boost-cpp 
-        - phosphoroscore ==1.5.2
+        - phosphoroscore ==1.5.4
         - qt >=5.12,<6
         - cfitsio >=3.470
         - CCfits >=2.5
