@@ -1,5 +1,5 @@
 {% set name = "Phosphoros" %}
-{% set version = "1.5.4" %}
+{% set version = "1.6.0" %}
 {% set build_number = 0 %}
 
 package:
@@ -42,10 +42,12 @@ requirements:
         - {{ cdt('libxfixes') }}             # [linux]
         - {{ cdt('libxfixes-devel') }}       # [linux]
         - {{ cdt('libselinux-devel') }}      # [linux]
+        - libcxx<16
     host:
         - python
         - boost-cpp 
-        - phosphoroscore ==1.5.4
+        - libcxx<16
+        - phosphoroscore ==1.6.1
         - qt >=5.12,<6
         - cfitsio >=3.470
         - CCfits >=2.5
@@ -54,6 +56,7 @@ requirements:
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('libcxx', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('CCfits') }}
         - astropy
         - matplotlib
