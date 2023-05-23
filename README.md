@@ -3,7 +3,7 @@ About phosphoros-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/phosphoros-feedstock/blob/main/LICENSE.txt)
 
-Home: http://isdc.unige.ch/euclid/phosphoros/
+Home: http://www.astro.unige.ch/phosphoros/
 
 Package license: LGPL
 
