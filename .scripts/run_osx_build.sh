@@ -24,9 +24,9 @@ source ${MINIFORGE_HOME}/etc/profile.d/conda.sh
 conda activate base
 
 mamba install --update-specs --quiet --yes --channel conda-forge \
-    conda-build pip boa conda-forge-ci-setup=3
+    conda-build pip boa conda-forge-ci-setup=3 qt==5.15.8
 mamba update --update-specs --yes --quiet --channel conda-forge \
-    conda-build pip boa conda-forge-ci-setup=3
+    conda-build pip boa conda-forge-ci-setup=3 qt==5.15.8
 
 
 
@@ -75,7 +75,7 @@ if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     # Drop into an interactive shell
     /bin/bash
 else
-    conda build ./recipe -m ./.ci_support/${CONFIG}.yaml \
+    conda mambabuild ./recipe -m ./.ci_support/${CONFIG}.yaml \
         --suppress-variables ${EXTRA_CB_OPTIONS:-} \
         --clobber-file ./.ci_support/clobber_${CONFIG}.yaml
 
