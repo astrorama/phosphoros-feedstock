@@ -1,6 +1,6 @@
 {% set name = "Phosphoros" %}
 {% set version = "1.6.4" %}
-{% set build_number = 4 %}
+{% set build_number = 5 %}
 
 package:
     name: {{ name|lower }}
@@ -56,6 +56,7 @@ requirements:
         - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('libcxx', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('CCfits') }}
+        - qt == 5.15.8
         - astropy
         - matplotlib
         - scipy
