@@ -1,6 +1,6 @@
 {% set name = "Phosphoros" %}
 {% set version = "1.8.2" %}
-{% set build_number = 3 %}
+{% set build_number = 4 %}
 
 package:
     name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
         - python                             # [build_platform != target_platform]
         - cross-python_{{ target_platform }} # [build_platform != target_platform]
         - cython                             # [build_platform != target_platform]
-        - qt >=5.12,<6                       # [build_platform != target_platform]
+        - qt >=6.3                       # [build_platform != target_platform]
         - cmake >=3.0
         - make
         - {{ compiler('cxx') }}
@@ -48,7 +48,7 @@ requirements:
         - boost-cpp 
         - libcxx<16
         - phosphoroscore ==1.8.2
-        - qt >=5.12,<6
+        - qt >=6.3
         - cfitsio >=3.470
         - CCfits >=2.5
         - lxml >=4.5
