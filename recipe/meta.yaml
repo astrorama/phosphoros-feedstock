@@ -1,6 +1,6 @@
 {% set name = "Phosphoros" %}
-{% set version = "1.8.2" %}
-{% set build_number = 5 %}
+{% set version = "1.8.3" %}
+{% set build_number = 0 %}
 
 package:
     name: {{ name|lower }}
@@ -42,12 +42,12 @@ requirements:
         - {{ cdt('libxfixes') }}             # [linux]
         - {{ cdt('libxfixes-devel') }}       # [linux]
         - {{ cdt('libselinux-devel') }}      # [linux]
-        - libcxx<16
+        - libcxx
     host:
         - python
         - boost-cpp 
         - libcxx
-        - phosphoroscore ==1.8.2
+        - phosphoroscore ==1.8.3
         - qt >=5.12,<6
         - cfitsio >=3.470
         - CCfits >=2.5
