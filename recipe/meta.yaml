@@ -1,6 +1,6 @@
 {% set name = "Phosphoros" %}
 {% set version = "1.9.0" %}
-{% set build_number = 11 %}
+{% set build_number = 12 %}
 
 package:
     name: {{ name|lower }}
@@ -28,6 +28,7 @@ requirements:
         - cmake >=3.0
         - make
         - {{ compiler('cxx') }}
+        - {{ compiler('c') }}
         - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
         - {{ cdt('libx11-devel') }}          # [linux]
         - {{ cdt('libxext-devel') }}         # [linux]
@@ -43,6 +44,7 @@ requirements:
         - {{ cdt('libxfixes-devel') }}       # [linux]
         - {{ cdt('libselinux-devel') }}      # [linux]
         - libcxx<16
+        - rhash
     host:
         - python
         - boost-cpp 
@@ -57,8 +59,8 @@ requirements:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('libcxx', min_pin='x.x', max_pin='x.x') }}
-        - {{ pin_compatible('CCfits') }}
-        - astropy
+        - {{ pin_compatible('CCfits', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('astropy', min_pin='x.x', max_pin='x') }}
         - matplotlib
         - scipy
         - requests
