@@ -9,8 +9,6 @@ package:
 source:
     git_rev: {{ version }}
     git_url: https://github.com/astrorama/Phosphoros.git
-    patches:
-      - trigger_compiler_id.patch
 
 build:
     number: {{ build_number }}
