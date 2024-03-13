@@ -1,7 +1,7 @@
 {% set name = "Phosphoros" %}
-{% set version = "1.9.0" %}
-{% set tagversion = "macos-m-1.9.0" %}
-{% set build_number = 13 %}
+{% set version = "2.0.0" %}
+{% set tagversion = "2.0.0" %}
+{% set build_number = 0 %}
 
 package:
     name: {{ name|lower }}
@@ -48,7 +48,7 @@ requirements:
         - python
         - boost-cpp 
         - libcxx<16
-        - phosphoroscore ==1.8.6
+        - phosphoroscore ==2.0.0
         - qt >=5.12,<6
         - cfitsio >=3.470
         - CCfits >=2.5
