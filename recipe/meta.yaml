@@ -1,6 +1,6 @@
 {% set name = "Phosphoros" %}
-{% set version = "2.0.10" %}
-{% set tagversion = "2.0.10" %}
+{% set version = "2.0.11" %}
+{% set tagversion = "2.0.11" %}
 {% set build_number = 0 %}
 
 package:
@@ -48,7 +48,7 @@ requirements:
         - python
         - boost-cpp 
         - libcxx
-        - phosphoroscore ==2.1.10
+        - phosphoroscore ==2.1.11
         - qt >=5.12,<6
         - cfitsio >=3.470
         - CCfits >=2.5
