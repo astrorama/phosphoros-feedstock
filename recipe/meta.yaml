@@ -1,7 +1,7 @@
 {% set name = "Phosphoros" %}
 {% set version = "2.0.11" %}
 {% set tagversion = "2.0.11" %}
-{% set build_number = 0 %}
+{% set build_number = 1 %}
 
 package:
     name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
         - cross-python_{{ target_platform }} # [build_platform != target_platform]
         - cython                             # [build_platform != target_platform]
         - qt >=5.12,<6                       # [build_platform != target_platform]
-        - cmake >=3.0
+        - cmake >=3.25,<4.0
         - make
         - {{ compiler('cxx') }}
         - {{ compiler('c') }}
