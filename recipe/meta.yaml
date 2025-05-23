@@ -1,7 +1,7 @@
 {% set name = "Phosphoros" %}
-{% set version = "2.0.12" %}
-{% set tagversion = "2.0.12" %}
-{% set build_number = 1 %}
+{% set version = "2.0.13" %}
+{% set tagversion = "2.0.13" %}
+{% set build_number = 0 %}
 
 package:
     name: {{ name|lower }}
