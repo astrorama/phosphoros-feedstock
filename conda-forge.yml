@@ -6,6 +6,7 @@ build_platform:
   osx_arm64: osx_64
 
 test_on_native_only: true
+channel_priority: strict
 
 provider:
   linux: azure
